@@ -33,7 +33,7 @@
     CGRect boundingBox = textBlock.charRect;
     
     CGFloat maxRadius = boundingBox.size.width > boundingBox.size.height ? boundingBox.size.width : boundingBox.size.height;
-    CGFloat radius = [ZCEasingUtil easeOutWithStartValue:0 endValue:maxRadius time:textBlock.progress];
+    CGFloat radius = maxRadius; //[ZCEasingUtil easeOutWithStartValue:0 endValue:maxRadius time:textBlock.progress];
 
     CGFloat centerX = CGRectGetMidX(boundingBox);
     CGFloat centerY = CGRectGetMidY(boundingBox);

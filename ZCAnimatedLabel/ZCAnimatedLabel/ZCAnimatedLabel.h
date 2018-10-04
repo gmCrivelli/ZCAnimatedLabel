@@ -20,6 +20,9 @@ typedef NS_ENUM(NSInteger, ZCAnimatedLabelAppearDirection)
     ZCAnimatedLabelAppearDirectionFromTopLeft,
 };
 
+@protocol ZCAnimatedLabelDelegate <NSObject>
+-(void) finishedAnimating;
+@end
 
 @interface ZCAnimatedLabel : UIView
 
@@ -88,6 +91,10 @@ typedef NS_ENUM(NSInteger, ZCAnimatedLabelAppearDirection)
 
 @property (nonatomic, assign) CGFloat preferredMaxLayoutWidth;
 
+/**
+ * Delegate for animation ending
+ */
+@property (nonatomic, assign) id<ZCAnimatedLabelDelegate> delegate;
 
 - (void) sizeToFit;
 

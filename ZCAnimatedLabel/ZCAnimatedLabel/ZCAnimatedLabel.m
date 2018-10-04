@@ -84,6 +84,9 @@
     if (self.animationTime > self.animationDurationTotal) {
         self.displayLink.paused = YES;
         self.useDefaultDrawing = YES;
+        if (self.delegate) {
+            [self.delegate finishedAnimating];
+        }
     }
     else { //update text attributeds array
         
