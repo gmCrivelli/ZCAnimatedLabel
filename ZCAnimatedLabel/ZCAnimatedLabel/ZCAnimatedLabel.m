@@ -63,7 +63,7 @@
     
     _useDefaultDrawing = YES;
     _text = @"";
-    _font = [UIFont systemFontOfSize:15];
+    _font = [UIFont systemFontOfSize:17];
     
     _debugTextBlockBounds = NO;
     _layerBased = NO;
