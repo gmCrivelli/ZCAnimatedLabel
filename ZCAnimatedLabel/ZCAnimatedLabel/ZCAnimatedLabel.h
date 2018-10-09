@@ -137,8 +137,7 @@ typedef NS_ENUM(NSInteger, ZCAnimatedLabelAppearDirection)
 
 - (void) disappearLayerStateChangesForTextBlock: (ZCTextBlock *) textBlock;
 
-
-
+- (void) setTextColor:(UIColor *)textColor;
 
 
 @end
